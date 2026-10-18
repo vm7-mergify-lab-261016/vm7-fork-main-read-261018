@@ -1,9 +1,10 @@
 pull_request_rules:
-  - name: VM7 external-read fork-main protected secret consumer 261018
+  - name: VM7 external-read fork-main consumer 261018
     conditions:
       - author = livastic-vm7-r61donor-261017
-      - title = VM7_FORK_MAIN_EXTERNAL_READ_SECRET_CONSUMER_261018
-      - check-success = vm7-prevention-read-secret-gate-261018
+      - title = VM7_FORK_MAIN_EXTERNAL_READ_CONSUMER_261018
+      - check-success = vm7-prevention-read-gate-261018
     actions:
       merge:
         method: squash
+
